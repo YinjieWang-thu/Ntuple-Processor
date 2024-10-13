@@ -1,5 +1,5 @@
 #!/bin/bash
-#version 20241013 edited by wangyinjie
+#version 20241013 modified by wangyinjie
 
 # This script is used to gentrate or edit myntuple.C
 
