@@ -1,5 +1,5 @@
 #!/bin/bash
-#version 20241013 edited by wangyinjie
+#version 20241013 modified by wangyinjie
 
 # This script is used to gentrate .C files to read RagneTree and draw distribution
 # Data from myntuple.C should be used in .C files above
