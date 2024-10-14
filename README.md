@@ -17,3 +17,8 @@ Thirdly, modify the myntuple.C in script folder. Complete the argument in functi
 Fourthly, root the Execute.C file. Before that, edit the last for loop in Execute.C. That will decide the number of runjobs files executed.
 
 Last, complete the configuration in MakeDrawRead.sh and bash it, then root the DrawDistribution.C in DrawRead folder.
+
+## Add cut variables in myntuple.C in current script folder
+
+Copy MakeMyntuple.sh and HistInfo.out in The script folder and edit HistInfo.out, just leave variables you want to add, then config the MakeMyntuple.sh(correct myntuple.C templete file name and
+set mode to 2), then bash it, finish the blank in Fill( ), and you can root the Execute.C.
