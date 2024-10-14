@@ -61,10 +61,10 @@ then
 			h_name=$(echo $rows | awk 'BEGIN{FS="/"} {print $1}')
 			h_min=$(echo $rows |awk 'BEGIN{FS="/"} {print $2}')
 			h_max=$(echo $rows | awk 'BEGIN{FS="/"} {print $3}')
-			sed -i -e '/HIST_RANGE/'"a\   double max_${h_name}=${h_max};\n   double max_${h_name}=${h_min};" C_temp.C	
-			sed -i -e '/HIST_DEFINE/'"a\   TH1F *h_sig_${h_name} = new TH1F(\"h_sig_${h_name}\", \"h_sig_${h_name}\", 100, min_${h_name}t, max_${h_name});\n   TH1F *h_bkg_${h_name} = new TH1F(\"h_bkg_${h_name}\", \"h_bkg_${h_name}\", 100, min_${h_name}, max_${h_name});"  C_temp.C
-			sed -i -e '/FILL_SIG/'"a\t\t\th_sig_${h_name}->Fill();//Edit what you want to fill here"	C_temp.C
-			sed -i -e '/FILL_BKG/'"a\t\t\th_bkg_${h_name}->Fill();//Edit what you want to fill here"	C_temp.C
+			sed -i -e '/HIST_RANGE/'"a\   double max_${h_name}=${h_max};\n   double min_${h_name}=${h_min};" C_temp.C	
+			sed -i -e '/HIST_DEFINE/'"a\   TH1F *h_sig_${h_name} = new TH1F(\"h_sig_${h_name}\", \"h_sig_${h_name}\", 100, min_${h_name}, max_${h_name});\n   TH1F *h_bkg_${h_name} = new TH1F(\"h_bkg_${h_name}\", \"h_bkg_${h_name}\", 100, min_${h_name}, max_${h_name});"  C_temp.C
+			sed -i -e '/FILL_SIG/'"a\ \t\t\th_sig_${h_name}->Fill();//Edit what you want to fill here"	C_temp.C
+			sed -i -e '/FILL_BKG/'"a\ \t\t\th_bkg_${h_name}->Fill();//Edit what you want to fill here"	C_temp.C
 		fi
 	done	
 	rm myntuple.C
