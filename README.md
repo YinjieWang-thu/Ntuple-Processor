@@ -2,7 +2,7 @@
 
 This Ntuple Processor is created to process ntuple files, generate invariant mass spectrum, and make cut distribution for some quantity. 
 
-This Ntuple Processor was originally created in https://github.com/AliceQuen/Ntuple-Processor.git, and I used is and made some modifications.
+This Ntuple Processor was originally created in https://github.com/AliceQuen/Ntuple-Processor.git, and I used it and made some modifications.
 
 The muntuple class is made and modified for data in /home/storage0/users/junkaiqin/JpsiX3872/ntuple.
 
