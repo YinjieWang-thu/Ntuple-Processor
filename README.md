@@ -4,7 +4,7 @@ This Ntuple Processor is created to process ntuple files, generate invariant mas
 
 This Ntuple Processor was originally created in https://github.com/AliceQuen/Ntuple-Processor.git, and I used it and made some modifications.
 
-The muntuple class is made and modified for data in /home/storage0/users/junkaiqin/JpsiX3872/ntuple.
+The myntuple class is made and modified for data in /home/storage0/users/junkaiqin/JpsiX3872/ntuple.
 
 ## User Guide
 
